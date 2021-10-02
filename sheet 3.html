@@ -1,50 +1,52 @@
 <!DOCTYPE html>
-<html>
+<html lang ="en">
     <haed>
         <meta charset="UTF-8"> 
         <title>sheet 3</title>
     </haed>
     <body>
      
-<h1>Coronavirus Intake Form for attend class</h1>
+<h1>Coronavirus Intake Form for attend class</h1>                                          <!--titel form-->
 
 
 <h5>For all of our safety, please fill this out 24 hours prior to cach calss (until further notice).
      Be sure that the mformation you ll gise is accurate and complete.
-     Please get immediate medical attention if you have any of the severe COVID-19</h5>
+     Please get immediate medical attention if you have any of the severe COVID-19</h5>   <!--text form-->
 
-<form method="POST" action = "message.html" target = "_blank" > 
-  <!--الاكشن لازم ارجع لها-->
-<fieldset>
+<form method="POST" action = "message.html" target = "_blank" >                           <!--start form -->
 
-    <legend>Personal Inforamtion</legend>
+  
+<fieldset>                                                                               <!--start fieldset 1 -->
 
-    <label for = "name ">First name:</label> <br>
+    <legend>Personal Inforamtion</legend>                                               <!--First Personal Inforamtion-->
+
+    <label for = "name ">First name:</label> <br>                                       <!--First name-->
 <input type = "text" id = "fn" name = "name">
 
 <br>
-
-<label for = "name ">Last name:</label> <br>
+                                                                                        
+<label for = "name ">Last name:</label> <br>                                            <!--secondly Last name -->
 <input type = "text" id = "ln" name = "name" size="6" maxlength="6">
 
 <br>
 
-<label for = "name ">Date of Brith:</label> <br>
+<label for = "name ">Date of Brith:</label> <br>                                        <!--Date of Brith-->
 <input type="date" id="datemax" name="datemax" max="2000-12-31" >
 
 <br>
 
-<label for="numPhone">Phone:</label> <br>
+                                               
+<label for="numPhone">Phone:</label> <br>                                               <!--Phone-->
 <input type="tel" id="numPhone" name="Phone" autocomplete="off">
 
 <br>
 
-<label for="email">Email:</label> <br>
+<label for="email">Email:</label> <br>                                                  <!--Email-->
 <input type="mailto" id="email" name="email" autocomplete="off">
 
 <br><br>
 
-<label>Do you have"-تطمئن-تباعد-توكلنا" APPs in your phone:</label>
+<label>Do you have"-تطمئن-تباعد-توكلنا" APPs in your phone:</label>                   <!--yes or no-->
 <input type = "radio"  id = "YES" name = "choose" value = "ok" >
 <label for="YES">YES</label>
 
@@ -53,14 +55,15 @@
 
 <br><br>
 
-</fieldset>
+</fieldset>                                                                            <!--end fieldset 1 -->
 
 <br><br>
 
-<fieldset>
-<legend>Claas inforamtion</legend> 
+<fieldset>                                                                         <!--start fieldset 2 -->
+                                                                             
+<legend>Claas inforamtion</legend>                                                 <!--secondly Claas inforamtion-->
 
-            <label for="class">Choose class:</label>
+            <label for="class">Choose class:</label>                               <!--class-->
 
                 <select id="claas" name="class">
                     <option></option>
@@ -77,19 +80,19 @@
         <textarea rows="10" cols="25"> </textarea>
 
 
-</fieldset>
+</fieldset>                                                                         <!--end fieldset 2 -->
 
 <br><br>
 
-<fieldset>
-        <legend>Heath Inforamtion:</legend>
+<fieldset>                                                                          <!--start fieldset 3 --> 
+        <legend>Heath Inforamtion:</legend>                                         <!--third Heath Inforamtion-->
         
         <label>How healthy do you feel in general?</label><br>
         0
         <input type="range" id="range" name="range" min="0" max="10"step="0.01">
         10
          
-<br>
+<br>                                                                                <!--symptoms-->
 
         <label>Check the symptoms that you have experienced in the PAST Week: </label><br>
         <input type="checkbox" id="symptoms1" name="symptoms" value="symptoms">
@@ -106,13 +109,13 @@
 
         <input type="checkbox" id="symptoms5" name="symptoms" value="symptoms">
         <label for="symptoms5"> Recent loss of sense of smell or taste </label><br>
-</fieldset>
+</fieldset>                                                                          <!--end fieldset 3 -->
 
 <br><br>
 
-<input type ="submit" value = "send">
+<input type ="submit" value = "send">                                                <!--submit-->
 
 
-</form>
+</form>                                                                              <!--end form-->
 </body>
 </html>
