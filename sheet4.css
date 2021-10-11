@@ -1,0 +1,78 @@
+.h1 {                                                           /*heading sheet1*/
+  color: rgb(233, 107, 35);
+  width: 500px;
+  
+  border: 5px solid blueviolet;
+  padding: 50px;
+  margin: 20px;
+}
+
+.h2{                                                           /*heading sheet2*/
+  color: green;
+}
+
+body {
+background-image: url(ccc.png);
+background-repeat: no-repeat;
+background-position: right top;
+background-attachment: fixed;
+background-size:15%;
+}   
+
+ul{
+    list-style-type: square;
+}                                                              /*ul , ol sheet1*/
+ol{
+list-style-type: lower-roman;
+} 
+
+
+a:link {                                                       /* unvisited link */ 
+text-decoration: none;
+}
+
+
+a:visited {                                                   /* visited link */ 
+text-decoration: none;
+}
+
+
+a:hover {                                                    /* mouse over link */
+text-decoration: underline;
+}
+
+
+a:active {                                                  /* selected link */
+text-decoration: underline;
+}
+
+a:link {                                                   /* unvisited link */
+color: red;
+}
+
+
+a:visited {                                               /* visited link */
+color: blue;
+}
+
+
+a:hover {                                                 /* mouse over link */
+color: green;
+}
+
+
+a:active {                                               /* selected link */
+color: black;
+}
+
+.p1 {                                                    /*paragraph sheet1*/
+  color: blueviolet;
+  font-size: 35px;
+  font-family: "Lucida Console", "Courier New", monospace;
+}
+
+.p2{                                                     /*paragraph sheet2*/
+  color:cadetblue;
+  font-size: 20px;
+  font-family: italic;
+}  
