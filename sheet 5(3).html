@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang ="en">
+    <head>
+       <meta charset="UTF-8"> 
+        <title>BMI Calculator Create Using Javasrcipt</title>
+        <a href="https://github.com/Meeadd/Meeadd.github.io" rel="noopener noreferrer" target="_blank">link to my github</a>
+    </head>
+    <body>
+    <form>
+        <h1>BMI Calculator Create Using Javasrcipt</h1>
+        
+        <label for="ww">Your Weight (Kg):</label>
+        <input type="text"  id="ww"   name="weight">
+        
+        <br><br>
+        
+        <label for="hh">Your Height (cm):</label>
+        <input type="text"  id="hh"   name="weight">
+        
+        <br><br>
+
+        <p id="res"></p>
+       
+        <button onclick="BMI()" id="btn">Calculate BMI </button>
+        <br><br>
+        
+         <label>Your BMI </label>  
+        <br><br>
+        
+        <label>This Means: Your BMI:</label>
+        
+        </form>
+<script>
+function BMI(){
+    var w=  document.getElementById("w").value;
+    var h=  document.getElementById("h").value;
+    var bmi =w/(h*h);
+    document.getElementById("res").innerHTML =":" + bmi;
+
+if (bmi < 18.5)
+    {
+        document.getElementById("res").value = "Underweight";
+    }
+
+    else if (bmi >= 18.5 && bmi <= 24.9)
+    {
+        document.getElementById("res").value = "Healthy weight";
+    }
+
+    else if (bmi > 25 && bmi <= 29.9)
+    {
+        document.getElementById("res").value = "Overweight";
+    }
+
+    else{
+            alert("Please Fill in everything correctly");
+        }
+}
+</script>
+</body>
+</html>
